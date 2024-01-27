@@ -59,6 +59,11 @@ const SDiv = styled.div`
     border-radius: 8px;
     margin-top: 32px;
     margin-bottom: 16px;
+
+    @media (width >= 1440px){
+        width: 730px;
+        height: 205px;
+    }
 `
 
 const IDiv = styled.div`
@@ -149,6 +154,11 @@ const HH6 = styled.h3`
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word;
+    cursor: pointer;
+
+    @media (width >= 1440px){
+        padding-right: 20px;
+    }
 `
 const PP = styled.h3`
    color: #67727E;
@@ -158,3 +168,5 @@ const PP = styled.h3`
     line-height: 24px;
     word-wrap: break-word;
 `
+
+

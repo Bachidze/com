@@ -28,6 +28,11 @@ const MDiv = styled.div`
     background-color: #fff;
     border-radius: 8px;
     padding: 16px;
+    @media (width >= 1440px){
+        width: 730px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
 `
 
 const Border = styled.div`
