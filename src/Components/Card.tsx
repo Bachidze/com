@@ -1,4 +1,4 @@
-import React from 'react'
+import  { useState } from 'react'
 import styled from 'styled-components'
 
 interface PropType {
@@ -8,11 +8,10 @@ interface PropType {
     desc: string;
     ImgUrl2: string;
     reply: string;
-    count: number;  
-    setCount: React.Dispatch<React.SetStateAction<number>>; 
 }
 
-const Card = ({ ImgUrl, name, time, desc, count, ImgUrl2, reply, setCount }: PropType) => {
+const Card = ({ ImgUrl, name, time, desc,  ImgUrl2, reply }: PropType) => {
+    const [count,setCount] = useState(2)
 
     const increase = () => {
         setCount(count + 1);
@@ -21,6 +20,7 @@ const Card = ({ ImgUrl, name, time, desc, count, ImgUrl2, reply, setCount }: Pro
     const decrease = () => {
         setCount(count - 1);
     };
+
 
     return (
         
