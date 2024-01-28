@@ -8,7 +8,7 @@ const Comments = ({ImgUrl4}:proptype2) => {
 
     <MDiv>
         <Border>
-            <INp maxlength={27} type="text" placeholder='Add a comment…'/>
+            <INp  type="text" placeholder='Add a comment…'/>
         </Border>
 
         <Flex>
